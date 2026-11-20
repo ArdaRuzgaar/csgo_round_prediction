@@ -33,4 +33,5 @@ Bu proje, CS:GO rekabetçi maç verileri üzerinden ekonomi farkı, harita-taraf
 - **Python** (`pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`)
 - **Jupyter Notebook**
 
-> *Not: Ham veri seti (`csdata.zip`) dosya boyutu nedeniyle repoya dahil edilmemiştir.*
+## Veri Seti
+Bu çalışmada Kaggle üzerindeki [CS:GO Competitive Matchmaking Data](https://www.kaggle.com/datasets/skihikingkevin/csgo-matchmaking-damage) veri seti kullanılmıştır. Dosya boyutu nedeniyle ham veri repoya dahil edilmemiştir.
