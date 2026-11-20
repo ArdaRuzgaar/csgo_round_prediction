@@ -8,7 +8,7 @@ Bu proje, CS:GO rekabetçi maç verileri üzerinden ekonomi farkı, harita-taraf
 - **Özellik Mühendisliği (Feature Engineering):**
   - `a_eq_diff`: 15. raunttaki taraf değişimini (T $\leftrightarrow$ CT) hesaba katarak Takım A'nın mevcut raunttaki ekipman değeri avantajı.
   - `map_side`: Harita ve oynanan taraf kombinasyonu (örn. `de_mirage_T`, `de_inferno_CT`).
-  - `a_prev_streak` & `b_prev_streak`: Veri sızıntısını (data leakage) önlemek için mevcut raundun değil, bir önceki raundun ardışık mağlubiyet serisi (`shift(1)`).
+  - `a_prev_streak` & `b_prev_streak`: Veri sızıntısını önlemek için mevcut raundun değil, bir önceki raundun ardışık mağlubiyet serisi (`shift(1)`).
 - **Modelleme:** Eğitim ve test setleri ayrıldıktan sonra özellikler yalnızca eğitim seti istatistikleriyle (`StandardScaler`) ölçeklendi ve **Logistic Regression** modeli eğitildi.
 
 ## Model Performansı
