@@ -8,7 +8,7 @@ scaler = paket['scaler']
 sutunlar = paket['sutunlar']
 
 st.title('CS:GO Raunt Kazanma Tahmini')
-st.caption("Harita, taraf, ekonomi farkı ve kaybetme serisine göre raunt kazanma olasılığı simülatörü (Logistic Regression)")
+st.caption("Harita, taraf, ekonomi farkı ve kaybetme serisine göre raunt kazanma olasılığı simülatörü")
 
 harita_sozlugu = {
     "Agency": "cs_agency", "Assault": "cs_assault", "Insertion": "cs_insertion",
