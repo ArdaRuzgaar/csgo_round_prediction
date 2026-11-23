@@ -15,18 +15,18 @@ Bu proje, CS:GO rekabetçi maç verileri üzerinden ekonomi farkı, harita-taraf
   - `a_eq_diff`: 15. raunttan sonraki taraf değişimini (T ↔ CT) hesaba katarak Takım A'nın mevcut raunttaki ekipman değeri avantajı.
   - `map_side`: Harita ve oynanan taraf kombinasyonu (örn. `de_mirage_T`, `de_inferno_CT`).
   - `a_prev_streak` & `b_prev_streak`: Veri sızıntısını önlemek için mevcut raundun değil, bir önceki raundun ardışık mağlubiyet serisi (`shift(1)`).
-- **Modelleme:** Eğitim ve test setleri ayrıldıktan sonra özellikler yalnızca eğitim seti istatistikleriyle (`StandardScaler`) ölçeklendi ve **Logistic Regression** modeli eğitildi.
+- **Modelleme:** Eğitim ve test setleri maç (`file`) bazında ayrıldı, özellikler yalnızca eğitim seti istatistikleriyle ölçeklendi ve Logistic Regression modeli eğitildi.
 
 ## Model Performansı
 
 | Model | Accuracy | ROC-AUC |
 | :--- | :---: | :---: |
-| Rastgele tahmin | %50.53 | - |
-| Sadece ardışık mağlubiyet serisi | %64.37 | 0.6474 |
-| Sadece ekipman farkı | %65.59 | 0.7161 |
-| Tüm özellikler | %65.96 | 0.7191 |
+| Baseline | %50.92 | - |
+| Sadece ardışık mağlubiyet serisi | %64.64 | 0.6488 |
+| Sadece ekipman farkı | %65.01 | 0.7099 |
+| Tüm özellikler | %65.19 | 0.7116 |
 
-Tahmin gücünün büyük kısmı ekipman farkından geliyor. Streak özellikleri tek başına da anlamlı bilgi taşıyor, ancak ekipman farkıyla yaklaşık ±0.54 korelasyonları olduğu için birlikte kullanıldıklarında ek katkıları küçük kalıyor (+0.37 puan accuracy).
+Tahmin gücünün büyük kısmı ekipman farkından geliyor. Streak özellikleri tek başına da anlamlı bilgi taşıyor, ancak ekipman farkıyla yaklaşık ±0.54 korelasyonları olduğu için birlikte kullanıldıklarında ek katkıları çok küçük kalıyor (+0.18 puan accuracy). 
 
 ## Görselleştirmeler
 
