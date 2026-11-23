@@ -26,7 +26,7 @@ Bu proje, CS:GO rekabetçi maç verileri üzerinden ekonomi farkı, harita-taraf
 | Sadece ekipman farkı | %65.01 | 0.7099 |
 | Tüm özellikler | %65.19 | 0.7116 |
 
-Tahmin gücünün büyük kısmı ekipman farkından geliyor. Streak özellikleri tek başına da anlamlı bilgi taşıyor, ancak ekipman farkıyla yaklaşık ±0.54 korelasyonları olduğu için birlikte kullanıldıklarında ek katkıları çok küçük kalıyor (+0.18 puan accuracy). 
+Tahmin gücünün büyük kısmı ekipman farkından geliyor. Mağlubiyet serisi özelliği de tek başına anlamlı bilgi taşıyor ancak ekipman farkıyla yaklaşık ±0.54 korelasyonları olduğu için birlikte kullanıldıklarında ek katkıları çok küçük kalıyor (+0.18 puan accuracy). 
 
 ## Görselleştirmeler
 
