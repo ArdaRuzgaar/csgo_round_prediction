@@ -14,7 +14,7 @@ Modeli kurulum yapmadan doğrudan tarayıcı üzerinden test etmek için **[Canl
 
 - **Veri Temizleme:** Oyuncu ve hasar bazlı tekrar eden log satırları maç ve raunt (`file`, `round`) bazında tekilleştirildi.
 - **Özellik Mühendisliği (Feature Engineering):**
-  - `a_eq_diff`: 15. raunttaki taraf değişimini (T $\leftrightarrow$ CT) hesaba katarak Takım A'nın mevcut raunttaki ekipman değeri avantajı.
+  - `a_eq_diff`: 15. raunttan sonraki taraf değişimini (T $\leftrightarrow$ CT) hesaba katarak Takım A'nın mevcut raunttaki ekipman değeri avantajı.
   - `map_side`: Harita ve oynanan taraf kombinasyonu (örn. `de_mirage_T`, `de_inferno_CT`).
   - `a_prev_streak` & `b_prev_streak`: Veri sızıntısını önlemek için mevcut raundun değil, bir önceki raundun ardışık mağlubiyet serisi (`shift(1)`).
 - **Modelleme:** Eğitim ve test setleri ayrıldıktan sonra özellikler yalnızca eğitim seti istatistikleriyle (`StandardScaler`) ölçeklendi ve **Logistic Regression** modeli eğitildi.
