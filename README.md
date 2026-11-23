@@ -44,4 +44,3 @@ Modeli kurulum yapmadan doğrudan tarayıcı üzerinden test etmek için **[Canl
 
 ## Veri Seti
 Bu çalışmada Kaggle üzerindeki [CS:GO Competitive Matchmaking Data](https://www.kaggle.com/datasets/skihikingkevin/csgo-matchmaking-damage) veri seti kullanılmıştır. Dosya boyutu nedeniyle ham veri repoya dahil edilmemiştir.
-streamlit run app.py
