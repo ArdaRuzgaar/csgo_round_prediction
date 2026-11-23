@@ -37,13 +37,6 @@ Modeli kurulum yapmadan doğrudan tarayıcı üzerinden test etmek için **[Canl
 ### 3. Model Değerlendirme (Confusion Matrix & ROC Eğrisi)
 ![Model Evaluation](images/model_evaluation.png)
 
-## Kurulum ve Yerel Çalıştırma
-
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
-
 ## Kullanılan Teknolojiler
 - **Python** (`pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`, `joblib`)
 - **Streamlit** (Web Arayüzü ve Deployment)
