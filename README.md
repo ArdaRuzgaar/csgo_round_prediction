@@ -19,10 +19,14 @@ Bu proje, CS:GO rekabetçi maç verileri üzerinden ekonomi farkı, harita-taraf
 
 ## Model Performansı
 
-| Metrik | Skor |
-| :--- | :---: |
-| **Accuracy** | **%65.96** |
-| **ROC-AUC** | **0.7191** |
+| Model | Accuracy | ROC-AUC |
+| :--- | :---: | :---: |
+| Rastgele tahmin | %50.53 | - |
+| Sadece ardışık mağlubiyet serisi | %64.37 | 0.6474 |
+| Sadece ekipman farkı | %65.59 | 0.7161 |
+| Tüm özellikler | %65.96 | 0.7191 |
+
+Tahmin gücünün büyük kısmı ekipman farkından geliyor. Streak özellikleri tek başına da anlamlı bilgi taşıyor, ancak ekipman farkıyla yaklaşık ±0.54 korelasyonları olduğu için birlikte kullanıldıklarında ek katkıları küçük kalıyor (+0.37 puan accuracy).
 
 ## Görselleştirmeler
 
