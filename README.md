@@ -1,6 +1,14 @@
 # CS:GO Raunt Sonucu Tahmini
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://csgoroundprediction-o4jxvrc4fx9azqit5kxn7j.streamlit.app)
+
 Bu proje, CS:GO rekabetçi maç verileri üzerinden ekonomi farkı, harita-taraf dinamiği ve ardışık mağlubiyet serilerini (losing streak) kullanarak **Logistic Regression** ile raunt sonucunu tahmin eder.
+
+## Canlı Web Uygulaması (Streamlit)
+
+Modeli kurulum yapmadan doğrudan tarayıcı üzerinden test etmek için **[Canlı Demo Uygulamasını Aç](https://csgoroundprediction-o4jxvrc4fx9azqit5kxn7j.streamlit.app)** bağlantısını kullanabilirsiniz.
+
+![Streamlit Demo](images/demo.png)
 
 ## Proje Özeti ve Yaklaşım
 
@@ -29,9 +37,18 @@ Bu proje, CS:GO rekabetçi maç verileri üzerinden ekonomi farkı, harita-taraf
 ### 3. Model Değerlendirme (Confusion Matrix & ROC Eğrisi)
 ![Model Evaluation](images/model_evaluation.png)
 
+## Kurulum ve Yerel Çalıştırma
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
 ## Kullanılan Teknolojiler
-- **Python** (`pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`)
+- **Python** (`pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`, `joblib`)
+- **Streamlit** (Web Arayüzü ve Deployment)
 - **Jupyter Notebook**
 
 ## Veri Seti
 Bu çalışmada Kaggle üzerindeki [CS:GO Competitive Matchmaking Data](https://www.kaggle.com/datasets/skihikingkevin/csgo-matchmaking-damage) veri seti kullanılmıştır. Dosya boyutu nedeniyle ham veri repoya dahil edilmemiştir.
+streamlit run app.py
